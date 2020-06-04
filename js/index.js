@@ -88,6 +88,11 @@ const middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 const aNode = document.createElement('a');
-const a = document.createTextNode('New Item 1');
+const a = document.createTextNode('Last A');
 aNode.appendChild(a);
 document.querySelector('nav').appendChild(aNode);
+
+const parent = document.querySelector('nav');
+let b = document.createElement('a');
+b.textContent = 'First A';
+parent.prepend(b);
