@@ -86,3 +86,8 @@ para[8].textContent = siteContent['footer']['copyright'];
 
 const middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+const aNode = document.createElement('a');
+const a = document.createTextNode('New Item 1');
+aNode.appendChild(a);
+document.querySelector('nav').appendChild(aNode);
