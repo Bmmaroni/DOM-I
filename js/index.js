@@ -96,3 +96,4 @@ const parent = document.querySelector('nav');
 let b = document.createElement('a');
 b.textContent = 'First A';
 parent.prepend(b);
+b.style.color = 'dodgerblue';
